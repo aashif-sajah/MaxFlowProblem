@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args) {
         System.out.println("=======================================");
-        System.out.println("🚀 Welcome to Max Flow Problem Solver!");
+        System.out.println("  Welcome to Max Flow Problem Solver!");
         System.out.println("=======================================");
 
         FlowNetwork network = InputLoader.loadNetworkFromInput();
@@ -13,8 +13,8 @@ public class Main {
         int maxFlow = EdmondsKarp.maxFlow(network, source, sink);
         long endTime = System.nanoTime();
 
-        System.out.println("\n✅ Final Maximum Flow: " + maxFlow);
-        System.out.println("⏱️ Time Taken: " + ((endTime - startTime) / 1e6) + " ms");
+        System.out.println("\nFinal Maximum Flow: " + maxFlow);
+        System.out.println("Time Taken: " + ((endTime - startTime) / 1e6) + " ms");
 
         System.out.println("\n🔁 Final Edge Flows:");
         for (int i = 0; i < network.n; i++) {
@@ -25,6 +25,6 @@ public class Main {
             }
         }
 
-        System.out.println("\n🎯 Thank you for using MaxFlowProblem Solver!");
+        System.out.println("\nThank you for using MaxFlowProblem Solver!");
     }
 }

@@ -26,10 +26,10 @@ public class InputLoader {
                     network.addEdge(from, to, capacity);
                 }
                 br.close();
-                System.out.println("✅ File loaded successfully!");
+                System.out.println("File loaded successfully!");
 
             } catch (Exception e) {
-                System.out.println("❌ Error: " + e.getMessage());
+                System.out.println("Error: " + e.getMessage());
                 System.out.println("Please try again with a valid file.");
             }
         }
