@@ -1,16 +1,17 @@
 import java.io.*;
+import java.util.Scanner;
 
 public class InputLoader {
 
     public static FlowNetwork loadNetworkFromInput() {
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        Scanner scan  = new Scanner(System.in);
         FlowNetwork network = null;
 
         while (network == null) {
             try {
                 System.out.println("\nPlease place your input file inside the 'input' folder.");
                 System.out.print("Enter input file name (with extension like 'graph1.txt'): ");
-                String filename = reader.readLine();
+                String filename = scan.nextLine();
 
                 BufferedReader br = new BufferedReader(new FileReader("input/" + filename));
                 int n = Integer.parseInt(br.readLine().trim());
