@@ -16,7 +16,7 @@ public class Main {
         System.out.println("\nFinal Maximum Flow: " + maxFlow);
         System.out.println("Time Taken: " + ((endTime - startTime) / 1e6) + " ms");
 
-        System.out.println("\n🔁 Final Edge Flows:");
+        System.out.println("\nFinal Edge Flows:");
         for (int i = 0; i < network.n; i++) {
             for (Edge e : network.getEdges(i)) {
                 if (e.getCapacity() > 0) {
