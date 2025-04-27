@@ -1,7 +1,7 @@
 public class Edge {
-    private int from;
-    private int to;
-    private int capacity;
+    private final int from;
+    private final int to;
+    private final int capacity;
     private int flow;
     private Edge reverse;
 
@@ -32,6 +32,6 @@ public class Edge {
 
     @Override
     public String toString() {
-        return from + " → " + to + " | Flow: " + flow + "/" + capacity;
+        return from + " -> " + to + " | Flow: " + flow + "/" + capacity;
     }
 }

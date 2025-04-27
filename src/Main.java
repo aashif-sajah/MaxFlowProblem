@@ -14,7 +14,7 @@ public class Main {
         long endTime = System.nanoTime();
 
         System.out.println("\nFinal Maximum Flow: " + maxFlow);
-        System.out.println("Time Taken: " + ((endTime - startTime) / 1e6) + " ms");
+        System.out.println("Time Taken: " + ((endTime - startTime) / 10^6) + " ms");
 
         System.out.println("\nFinal Edge Flows:");
         for (int i = 0; i < network.n; i++) {
